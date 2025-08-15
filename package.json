@@ -2,14 +2,12 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kalaus15.github.io/website-test",
+  "homepage": "/test/my-website",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out -r https://github.com/Kalaus15/triangle-website"
+    "lint": "next lint"
   },
   "dependencies": {
     "framer-motion": "^12.9.4",

@@ -1,12 +1,11 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  basePath: '/test',
   output: 'export',
-  images: {
-    unoptimized: true, // GitHub Pages doesn't support Image Optimization
-  },
-  basePath: "/website-test", // Required for GitHub Pages to serve from a subpath
   trailingSlash: true,
+  reactStrictMode: true,
 };
 
 export default nextConfig;
