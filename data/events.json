@@ -1,26 +1,50 @@
 [
     {
-      "title": "Spring Recruitment Week",
-      "date": "March 10-15, 2025",
-      "time": "Varies",
+      "title": "Open House",
+      "date": "September 5th, 2025",
+      "time": "6pm-8pm",
       "location": "Triangle House",
-      "description": "Join us for a week of fun events and learn about Triangle!",
+      "description": "Come check out our two houses on North Breese and meet some of our members!",
       "link": "/events"
     },
     {
-      "title": "Alumni Networking Night",
-      "date": "April 20, 2025",
-      "time": "6:00 PM - 9:00 PM",
-      "location": "Student Union",
-      "description": "Connect with our alumni and expand your network.",
+      "title": "Engineering Games",
+      "date": "September 8th, 2025",
+      "time": "6pm-8pm",
+      "location": "Triangle House",
+      "description": "Compete against your peers and other members in quick engineering related games!",
       "link": "/events"
     },
     {
-      "title": "Brotherhood Retreat",
-      "date": "May 4-5, 2025",
-      "time": "All day",
-      "location": "Camp Randall Lodge",
-      "description": "A weekend retreat to strengthen our bonds and plan for the future.",
+      "title": "Game Night",
+      "date": "September 10th, 2025",
+      "time": "7pm-9pm",
+      "location": "Triangle House",
+      "description": "Come by the house for board games, jackbox, poker, and other games!",
+      "link": "/events"
+    },
+    {
+      "title": "Grill Out",
+      "date": "September 12th, 2025",
+      "time": "6pm-8pm",
+      "location": "Triangle House",
+      "description": "Come hang out at the house and enjoy free food fresh off the grill!",
+      "link": "/events"
+    },
+    {
+      "title": "Nerf Wars",
+      "date": "September 14th, 2025",
+      "time": "6pm-8pm",
+      "location": "Triangle House",
+      "description": "Suit up for our multi house nerf war!",
+      "link": "/events"
+    },
+    {
+      "title": "Hot Ones",
+      "date": "September 16th, 2025",
+      "time": "6pm-8pm",
+      "location": "Triangle House",
+      "description": "The popular hot wing style interviews so we can get to know eachother! (Invite only)",
       "link": "/events"
     }
   ]

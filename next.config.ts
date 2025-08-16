@@ -2,7 +2,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: '/test',
+  basePath: '',
   output: 'export',
   trailingSlash: true,
   reactStrictMode: true,

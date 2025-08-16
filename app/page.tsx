@@ -11,7 +11,7 @@ const images = [
   { src: "images/members.jpg", alt: "Members" },
   { src: "images/dogdays.jpg", alt: "Dog Days Fundraiser" },
   { src: "images/h4h.jpg", alt: "Habitat for Humanity" },
-  { src: "images/winter house 2.jpg", alt: "Chapter House" },
+  { src: "images/winter-house-2.jpg", alt: "Chapter House" },
   { src: "images/highway.jpg", alt: "Highway Clean Up" },
 ]
 
