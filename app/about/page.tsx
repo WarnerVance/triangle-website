@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import * as motion from "motion/react-client";
 
 const fadeInUp = {
@@ -12,21 +13,26 @@ export default function AboutPage() {
   return (
     <>
       {/* Full-width image comment*/}
-      <div className="w-full h-[300px] sm:h-[400px] md:h-[625px] overflow-x-hidden mt-5 relative">
-        <motion.img
+      <motion.div
+        className="w-full h-[300px] sm:h-[400px] md:h-[625px] overflow-x-hidden mt-5 relative"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Image
           src="/images/members.jpg"
           alt="Chapter Members"
-          className="w-full h-full object-cover aspect-video"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
         />
           <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center text-center">
             <div className="text-white z-10 bg-center bg-[#7f0000]/40 rounded-xl p-3 mt-40">
               <h1 className="text-4xl sm:text-6xl md:text-9xl font-bold drop-shadow-md">About Triangle</h1>
             </div>
           </div>
-        </div>
+        </motion.div>
       
       <main className="max-w-8xl mx-auto py-10 px-6 space-y-16">
 
@@ -68,11 +74,16 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex-1">
-            <img
-              src="/images/crest.png"
-              alt="Fraternity Crest"
-              className="h-[600px] object-cover mx-auto"
-            />
+            <div className="relative h-[600px]">
+              <Image
+                src="/images/crest.png"
+                alt="Fraternity Crest"
+                fill
+                className="object-contain mx-auto"
+                sizes="(min-width: 768px) 40vw, 80vw"
+                priority
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -89,11 +100,15 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex-1">
-            <img
-              src="/images/winter-house.jpg"
-              alt="Winter House"
-              className="w-full object-cover rounded-lg shadow-md aspect-video"
-            />
+            <div className="relative w-full aspect-video">
+              <Image
+                src="/images/winter-house.jpg"
+                alt="Winter House"
+                fill
+                className="object-cover rounded-lg shadow-md"
+                sizes="(min-width: 768px) 50vw, 100vw"
+              />
+            </div>
           </div>
         </motion.div>
 

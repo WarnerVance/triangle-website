@@ -29,8 +29,11 @@ if (
             memoryStore.set(key, String(value));
         },
     };
-    // @ts-expect-error localStorage is available at runtime in browsers; polyfilled here for Node dev.
-    globalThis.localStorage = memoryStorage;
+    Object.defineProperty(globalThis, "localStorage", {
+        value: memoryStorage,
+        configurable: true,
+        writable: false,
+    });
 }
 
 const geistSans = Geist({

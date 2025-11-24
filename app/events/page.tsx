@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import events from "@/data/events.json";
 import { useState } from "react";
 import * as motion from "motion/react-client";
@@ -142,7 +143,16 @@ export default function EventsPage() {
               </div>
               <div className="md:w-1/2">
                 <div className="bg-gray-100 rounded-xl h-60 w-full shadow-inner flex items-center justify-center">
-                  <img src={item.image} className="w-full h-60 rounded-lg object-cover shadow-md"/>
+                  <div className="relative h-60 w-full">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="rounded-lg object-cover shadow-md"
+                      sizes="(min-width: 768px) 40vw, 100vw"
+                      priority={index === 0}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
